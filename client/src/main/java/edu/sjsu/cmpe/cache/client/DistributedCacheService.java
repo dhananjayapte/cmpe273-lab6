@@ -30,7 +30,7 @@ public class DistributedCacheService implements CacheServiceInterface {
             System.err.println(e);
         }
         String value = response.getBody().getObject().getString("value");
-
+        System.out.println("Value is---->"+value);
         return value;
     }
 
