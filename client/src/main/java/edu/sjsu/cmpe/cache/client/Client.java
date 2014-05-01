@@ -27,7 +27,7 @@ public class Client {
         System.out.println("---------------------- Retrieve Values from Server ------------------------------");
         for(int getkey=1; getkey<=10; getkey++)	{
         	int bucket = Hashing.consistentHash(Hashing.md5().hashString(Integer.toString(getkey)), serverList.size());
-        	System.out.println("The key value pair " + getkey +"-" + serverList.get(bucket).get(getkey)+ " is received to server " + bucket);
+        	System.out.println("The key value pair " + getkey +"-" + serverList.get(bucket).get(getkey)+ " is received from server " + bucket);
         	
         }
 
